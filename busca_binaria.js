@@ -1,12 +1,12 @@
 function binary_search(lista, item_procurado) {
-  let inicio = 0;
-  let fim = lista.length - 1;
+  const inicio = 0;
+  const fim = lista.length - 1;
 
   if (inicio <= fim) {
-    let elementoDoMeio = (inicio + fim) / 2;
+    const elementoDoMeio = (inicio + fim) / 2;
 
     if (lista[elementoDoMeio] === item_procurado) {
-      return `Posição do elemento: ${elementoDoMeio}`;
+      return `Posição do elemento encontrado: ${elementoDoMeio}`;
     }
 
     if (item_procurado < lista[elementoDoMeio]) {
